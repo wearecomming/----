@@ -1,0 +1,9 @@
+component
+time-varying
+timr-invariant
+superposition
+homogeneity
+withheld
+scalar
+wheras
+derivatives

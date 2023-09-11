@@ -1,0 +1,20 @@
+const unsigned long SUPERLOOP_MS = 2000;
+long gYourGlobalName=0;
+void setup() {
+ Serial.begin(9600);
+}
+void loop() {
+ static long someStaticLocal=0;
+ long someLocal=0;
+ gYourGlobalName++;
+ someStaticLocal++;
+ someLocal++;
+ Serial.print(millis());
+ Serial.print("ms:  gYourGlobalName = ");
+ Serial.print(gYourGlobalName);
+ Serial.print("，someStaticLocal = ");
+ Serial.print(someStaticLocal);
+ Serial.print("，someLocal = ");
+ Serial.println(someLocal);
+ delay(SUPERLOOP_MS);
+}

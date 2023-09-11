@@ -1,0 +1,39 @@
+3.#include <ee108.h>
+const int LED = BAR_LED_5_PIN; // the pin to use
+const int OPEN_TIME = 0; // the on-time in ms during each blink
+const int CLOSE_TIME = 25;
+const int OPEN_TIME_US=100; 
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(LED, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(OPEN_TIME);
+  delayMicroseconds(OPEN_TIME_US);// wait for a second
+  digitalWrite(LED, LOW);    // turn the LED off by making the voltage LOW
+  delay(CLOSE_TIME);                       // wait for a second
+}
+
+4.const unsigned long SUPERLOOP_MS = 2000;
+long gYourGlobalName=0;
+void setup() {
+ Serial.begin(9600);
+}
+void loop() {
+ static long someStaticLocal=0;
+ long someLocal=0;
+ gYourGlobalName++;
+ someStaticLocal++;
+ someLocal++;
+ Serial.print(millis());
+ Serial.print("ms:  gYourGlobalName = ");
+ Serial.print(gYourGlobalName);
+ Serial.print("，someStaticLocal = ");
+ Serial.print(someStaticLocal);
+ Serial.print("，someLocal = ");
+ Serial.println(someLocal);
+ delay(SUPERLOOP_MS);
+}

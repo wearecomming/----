@@ -1,0 +1,3 @@
+At least 5 times.
+I will use two numbers less than 40, 40 and two numbers larger than 40.
+For example 23,39,40,41,56

@@ -1,0 +1,32 @@
+validity
+underlying
+captures
+algebraic
+time-domain
+transient
+discrete
+state-space
+Nyquist
+trilogy
+
+Linear systems possess two important properties, namely superposition and 
+homogeneity.
+
+A dynamical system is where the current output (or effect variable) depends on past 
+inputs (or cause variables). As such, a dynamical system is also referred to as a system 
+with memory. 
+• On the other hand, a static system is where the current output 
+depends only on the current input. It cannot depend on past values 
+and, as such, these systems are referred to as systems with no 
+memory
+• The principle of superposition - this states that the response produced by a combination of 
+different inputs is the sum of the individual responses produced by each of the different 
+inputs acting alone. In other words, the response of a multi-input linear system can be 
+determined by dealing with each input in turn and then adding the results. 
+• Homogeneity (or scaling) – this states that if an input u(t) produces and output y(t) then, 
+for a linear system, an input ku(t) will produce an output ky(t), where k is a scalar. 
+
+A transfer function (TF) model is the input-output relationship of a system in the Laplace 
+Transform space.
+A TF is defined as the ratio of the Laplace transforms of the output and input of a system 
+for zero initial conditions: 
